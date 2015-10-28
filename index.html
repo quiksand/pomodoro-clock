@@ -14,29 +14,105 @@
 
 <html lang="en-US">
 
-<head>
+  <head>
 
-  <title>Pomodoro Clock</title>
-  <!--link font awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <!--link bootstrap -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-  <!--link custom css -->
-  <link rel="stylesheet" type="text/css" href="pomodoro-css.css">
-  <!--meta stuff -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pomodoro Clock</title>
+    <!--link font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--link bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <!--link custom css -->
+    <link rel="stylesheet" type="text/css" href="pomodoro-css.css">
+    <!--meta stuff -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
+  </head>
 
   <body>
 
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Pomodoro Clock</h1>
+      </div>
+    </div>
+
+    <div class="row setrow">
+
+      <div class="col-xs-3">
+        <!--empty- placeholder-->
+      </div>
+
+      <div class="col-xs-3">
+      <!-- left time set -->
+        <div class="timehead">
+          BREAK LENGTH
+        </div>
+
+        <div class="arrow-left">
+          <a href="#" class="break-minus"><span class="fa fa-chevron-left fa-3x"></span></a>
+        </div>
+
+        <div class="time break-time">
+          00
+        </div>
+
+        <div class="arrow-right">
+          <a href="#" class="break-plus"><span class="fa fa-chevron-right fa-3x"></span></a>
+        </div>
+        
+      </div>
+
+      <div class="col-xs-3">
+        <div>
+          <!-- right time set -->
+          <div class="timehead">
+          SESSION LENGTH
+        </div>
+
+        <div class="arrow-left">
+          <a href="#" class="session-minus"><span class="fa fa-chevron-left fa-3x"></span></a>
+        </div>
+
+        <div class="time session-time">
+          00
+        </div>
+
+        <div class="arrow-right">
+          <a href="#" class="session-plus"><span class="fa fa-chevron-right fa-3x"></span></a>
+        </div>         
+        </div>
+      </div>
+
+      <div class="col-xs-3">
+        <!--empty placeholder -->
+      </div>
+
+    </div>
 
 
+    <div class="row pomorow">
+    <!-- pomodoro row -->
+      <div class="clock-outer">
+        <div class="clock-inner vertical-center">
+          <div class="cont">
+            <p class="countdown counter-label">Session</p>
+            <br><br><br><br>
+            <p class="countdown counter">18:00</p>
+          </div>
+        </div>
 
+        <div class="sand">
+          <!-- sand that fills the clock -->
+        </div>
 
+      </div>
 
+    </div>
 
+  </div>
 
 
 
