@@ -13,7 +13,7 @@
 html,
 body {
 	color: #f8f8f8;
-	background-color: rgb(35,35,35);
+	background-color: #333333;
 }
 
 .break-time {}
@@ -24,6 +24,40 @@ body {
 .session-minus {}
 .counter {}
 .counter-label {}
+
+.fa:active{
+	color: #FF7A5A;
+}
+
+.ref-button {
+	transform: scaleX(-1) rotate(45deg);
+	transition: transform .4s ease;  
+}
+.ref-button:hover {
+	transform: scaleX(-1) rotate(225deg);   
+}
+.ref-button:active {}
+
+.refreshrow {
+	position: absolute;
+	display: inline-block;
+
+}
+.refreshlink {
+	margin: auto;
+}
+.play-pause {
+	height: 292px;
+	width: 292px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 3;
+	text-align: center;
+}
+
+.center-icon {
+	margin: auto;
+}
 
 .container {}
 
@@ -48,7 +82,13 @@ h1 {
 	position: relative;
 	margin: auto;
 	overflow: hidden;
-
+	/*The css below fixes the sand breaking when there's a transition on the screen*/
+	/*backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+*/    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
 }
 
 .clock-inner {
@@ -59,23 +99,20 @@ h1 {
 	border-radius: 50%;
 	position: absolute;
 	z-index: 2;
-
 }
 
 .cont {
 	margin: auto;
-	border: 1px dashed orange;
 }
 .countdown {
-	margin: auto;
+	margin: auto;d    
 	display: inline;
-	border: 1px dashed orange;
 	font-size: 4em;
 	color: #FF7A5A;
 }
 
 .sand {
-	height: 200px;
+	height: 1px;
 	width: 306px;
 	background-color: #00AAA0;
 	padding: 0;
@@ -83,6 +120,12 @@ h1 {
 	position: absolute;
 	bottom: 3px;
 	z-index: 1;
+	transition: height 5s linear;
+}
+
+.sand:focus {
+	height: 299px;
+	/*min: 1px  max: 299px */
 }
 
 .time {
@@ -91,7 +134,6 @@ h1 {
 	/*bottom: 0;*/
 	font-size: 3em;
 	width: 1.75em;
-	border: 1px solid green;
 	padding:0;
 }
 
@@ -100,27 +142,20 @@ h1 {
 	/*top: 0;*/
 	display: block;
 	font-size: 1.25em;
-	border: 1px solid gray;
 }
 
 .arrow-left {
 	display: inline-block;
-	border: 1px solid orange;
-	/*position: absolute;*/
-	/*left: 0;*/
 }
 
 .arrow-right {
 	display: inline-block;
-	border: 1px solid orange;
-	/*position: absolute;*/
-	/*right: 0;*/
 }
 
 .adjuster {
 	position: relative;
 }
-/*  #FF7A5A   */
+
 
 .test {
 	border: 1px solid red;
@@ -132,7 +167,18 @@ h1 {
 
 }
 
+.row {
+/*	border: 1px solid orange;
+*/}
+
+.col-xs-4,
 .col-xs-3,
 .col-xs-2 {
-	border: 1px dashed blue;
-}
+/*	border: 1px dotted purple;
+*/}
+
+/*#C64521
+/*  #FF7A5A   */
+
+
+*/
