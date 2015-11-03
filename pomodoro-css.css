@@ -12,70 +12,42 @@
 
 html,
 body {
-	color: #f8f8f8;
+	color: #FCF4D9;
 	background-color: #333333;
 }
 
+h1 {
+	color: #00AAA0;
+	font-size: 5em;
+}
+
+.arrow-left,
+.arrow-right {
+	display: inline-block;
+}
 .break-time {}
 .break-plus {}
 .break-minus {}
-.session-time {}
-.session-plus {}
-.session-minus {}
-.counter {}
-.counter-label {}
-
-.fa:active{
-	color: #FF7A5A;
-}
-
-.ref-button {
-	transform: scaleX(-1) rotate(45deg);
-	transition: transform .4s ease;  
-}
-.ref-button:hover {
-	transform: scaleX(-1) rotate(225deg);   
-}
-.ref-button:active {}
-
-.refreshrow {
-	position: absolute;
-	display: inline-block;
-
-}
-.refreshlink {
-	margin: auto;
-}
-.play-pause {
-	height: 292px;
-	width: 292px;
-	border-radius: 50%;
-	position: absolute;
-	z-index: 3;
-	text-align: center;
-}
 
 .center-icon {
 	margin: auto;
+	color: ;
 }
 
-.container {}
-
-h1 {
-	font-size: 4em;
+.clock-inner {
+	border: 4px solid #333333;
+	background-color: transparent;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 2;
 }
-
-.row {
-	text-align: center;
-}
-
-
-
-.pomorow {}
 
 .clock-outer {
 	background-color: transparent;
-	border: 3px solid #00AAA0;
+	border: 3px solid;
+	border-color: #00AAA0;
 	height: 306px;
 	width: 306px;
 	border-radius: 50%;
@@ -85,34 +57,69 @@ h1 {
 	/*The css below fixes the sand breaking when there's a transition on the screen*/
 	/*backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-*/    transform: translate3d(0, 0, 0);
+    -moz-backface-visibility: hidden;*/    
+	transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
-}
-
-.clock-inner {
-	border: 4px solid rgb(35,35,35);
-	background-color: transparent;
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	position: absolute;
-	z-index: 2;
 }
 
 .cont {
 	margin: auto;
 }
+
 .countdown {
 	margin: auto;d    
 	display: inline;
 	font-size: 4em;
-	color: #FF7A5A;
+	color: #FFB85F;
+}
+
+.counter {}
+.counter-label {}
+
+.fa {
+	cursor: pointer;
+	color: #A6CB45;
+}
+
+.fa:focus,
+.fa:active{
+	color: #93648D;
+}
+
+.play-pause {
+	height: 292px;
+	width: 292px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 3;
+	text-align: center;
+}
+
+.ref-button {
+	transform: scaleX(-1) rotate(45deg);
+	transition: transform .4s ease;  
+}
+
+.ref-button:hover {
+	transform: scaleX(-1) rotate(225deg);   
+}
+
+.refreshlink {
+	margin: auto;
+}
+
+.refreshrow {
+	position: absolute;
+	display: inline-block;
+}
+
+.row {
+	text-align: center;
 }
 
 .sand {
-	height: 1px;
+	height: 0px;
 	width: 306px;
 	background-color: #00AAA0;
 	padding: 0;
@@ -120,13 +127,11 @@ h1 {
 	position: absolute;
 	bottom: 3px;
 	z-index: 1;
-	transition: height 5s linear;
 }
 
-.sand:focus {
-	height: 299px;
-	/*min: 1px  max: 299px */
-}
+.session-time {}
+.session-plus {}
+.session-minus {}
 
 .time {
 	/*position: absolute;*/
@@ -138,47 +143,11 @@ h1 {
 }
 
 .timehead {
-	/*position: absolute;*/
-	/*top: 0;*/
 	display: block;
 	font-size: 1.25em;
-}
-
-.arrow-left {
-	display: inline-block;
-}
-
-.arrow-right {
-	display: inline-block;
-}
-
-.adjuster {
-	position: relative;
-}
-
-
-.test {
-	border: 1px solid red;
 }
 
 .vertical-center {
 	display: flex;
 	align-items: center;
-
 }
-
-.row {
-/*	border: 1px solid orange;
-*/}
-
-.col-xs-4,
-.col-xs-3,
-.col-xs-2 {
-/*	border: 1px dotted purple;
-*/}
-
-/*#C64521
-/*  #FF7A5A   */
-
-
-*/

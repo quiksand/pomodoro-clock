@@ -31,120 +31,108 @@
 
   <body>
 
-  <div class="container">
+    <div class="container">
 
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Pomodoro Clock</h1>
-      </div>
-    </div>
-
-    <div class="row">
-      
-      <div class="col-xs-3">
-        <!--empty- placeholder-->
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Pomodoro Clock</h1>
+        </div>
       </div>
 
-<div class="col-xs-6"> <!-- col6 -->
-<div class="row"> <!-- row -->
-<div class="col-xs-1"></div>
-      <div class="col-xs-4">
-      <!-- left time set -->
-        <div class="timehead">
-          BREAK LENGTH
-        </div>
-
-        <div class="arrow-left">
-          <a href="#" class="break-minus"><span class="fa fa-chevron-left fa-3x"></span></a>
-        </div>
-
-        <div class="time break-time">
-          05
-        </div>
-
-        <div class="arrow-right">
-          <a href="#" class="break-plus"><span class="fa fa-chevron-right fa-3x"></span></a>
-        </div>
+      <div class="row">
         
-      </div>
-
-<div class="col-xs-2">
-<div class="row">
-<a href="#" class="ref-button"><span class="fa fa-5x fa-refresh"></span></a>
-
-  </div>
-</div> <!-- added -->
-
-      <div class="col-xs-4">
-        <div>
-
-          <!-- right time set -->
-          <div class="timehead">
-          SESSION LENGTH
+        <div class="col-xs-3">
+          <!--empty- placeholder-->
         </div>
 
-        <div class="arrow-left">
-          <a href="#" class="session-minus"><span class="fa fa-chevron-left fa-3x"></span></a>
-        </div>
+        <div class="col-xs-6"> <!-- col6 -->
+          <div class="row"> <!-- row -->
+            <div class="col-xs-1"></div>
+            <div class="col-xs-4">
+            <!-- left time set -->
+              <div class="timehead">
+                BREAK LENGTH
+              </div>
 
-        <div class="time session-time">
-          25
-        </div>
+              <div class="arrow-left">
+                <span class="fa fa-chevron-left fa-3x break-minus"></span>
+              </div>
 
-        <div class="arrow-right">
-          <a href="#" class="session-plus"><span class="fa fa-chevron-right fa-3x"></span></a>
-        </div>         
-        </div>
-      </div>
-<div class="col-xs-1"></div>
-</div> <!-- row -->
-</div> <!-- col --> 
+              <div class="time break-time">
+                05
+              </div>
 
-      <div class="col-xs-3">
+              <div class="arrow-right">
+                <span class="fa fa-chevron-right break-plus fa-3x"></span>
+              </div>
+        
+            </div>
+
+            <div class="col-xs-2">
+              <div class="row">
+                <span class="fa fa-5x fa-refresh ref-button"></span>
+              </div>
+            </div>
+
+            <div class="col-xs-4">
+              <div>
+              <!-- right time set -->
+                <div class="timehead">
+                  SESSION LENGTH
+                </div>
+
+                <div class="arrow-left">
+                  <span class="fa fa-chevron-left fa-3x session-minus"></span>
+                </div>
+
+                <div class="time session-time">
+                  25
+                </div>
+
+                <div class="arrow-right">
+                  <span class="fa fa-chevron-right fa-3x session-plus"></span>
+                </div>         
+              </div>
+            </div>
+          <div class="col-xs-1"></div>
+          </div> <!-- row -->
+        </div> <!-- col --> 
+
+        <div class="col-xs-3">
         <!--empty placeholder -->
-      </div>
-
-    </div>
-
-
-    <div class="row pomorow">
-    <!-- pomodoro row -->
-      <div class="clock-outer">
-        <div class="clock-inner vertical-center">
-          <div class="play-pause vertical-center">
-          <a href="#" class="center-icon">
-            <span class="fa fa-play fa-5x center-span"></span></a>
-          </div>
-          <div class="cont">
-            <p class="countdown counter-label">Session</p>
-            <br><br><br><br>
-            <p class="countdown counter">25:00</p>
-          </div>
-        </div>
-
-        <div class="sand">
-          <!-- sand that fills the clock -->
         </div>
 
       </div>
 
+      <div class="row pomorow">
+      <!-- pomodoro row -->
+        <div class="clock-outer">
+          <div class="clock-inner vertical-center">
+            <div class="play-pause vertical-center">
+              <div class="center-icon">
+                <span class="fa fa-play fa-5x center-span"></span>
+              </div>
+            </div>
+            <div class="cont">
+              <p class="countdown counter-label">Session</p>
+              <br><br><br><br>
+              <p class="countdown counter">25:00</p>
+            </div>
+          </div>
+
+          <div class="sand">
+          <!--sand that fills the clock -->        
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <br>
+        <span class="fa fa-arrows-h fa-5x"></span>
+      </div>
     </div>
-
-    <div class="row">
-    <br>
-      <a href="#" class="">
-  <span class="fa fa-arrows-h fa-5x"></span>
-  </a>
-    </div>
-
-  </div>
-
-
-
-
-
-
-
 
     <!-- load jquery -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8" defer></script>
